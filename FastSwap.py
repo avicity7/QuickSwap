@@ -10,9 +10,9 @@ from decimal import Decimal
 personal_wallet = "" #Enter your personal address here
 private = "" #Enter your private key here
 
-def buyTokens(tokenA,tokenB,personal_wallet,private):
+def buyTokens(tokenA,tokenB,personal_wallet,private,min_amount):
     pancakeswap2_txn = contract.functions.swapExactETHForTokens(
-        1074184953676691292, # here setup the minimum destination token you want to have, you can do some math, or you can put a 0 if you don't want to care
+        min_amount, # here setup the minimum destination token you want to have, you can do some math, or you can put a 0 if you don't want to care
         [tokenA,tokenB],
         personal_wallet,
         (int(time.time()) + 1000000)
@@ -51,7 +51,7 @@ while True:
 
     purchaseMethod = int(input("Enter 1 for regular buy and 2 for sniping: "))
     if purchaseMethod == 1: 
-        buyTokens(tokenA,tokenB,personal_wallet,private)
+        buyTokens(tokenA,tokenB,personal_wallet,private,min_amount)
 
     if purchaseMethod == 2: 
         while True:
@@ -107,4 +107,4 @@ while True:
 
             except:
                 print("Liqiuidity not added")
-        buyTokens(tokenA,tokenB,personal_wallet,private)
+        buyTokens(tokenA,tokenB,personal_wallet,private,min_amount)
