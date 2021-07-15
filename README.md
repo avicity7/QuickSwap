@@ -3,11 +3,9 @@
 A discrete Python based node-less sniper. 
 
 ## Usage
-Two libraries are required, web3 and json. Installation commands are as follows: 
+Web3 is required. Install the Web3 library by utilising the command below: 
 ```python 
 pip3 install web3 
-
-pip3 install json 
 ```
 
 Lines 10 and 11 need to be changed to your own address and personal key. 
