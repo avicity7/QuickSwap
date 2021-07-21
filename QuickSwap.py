@@ -1,3 +1,7 @@
+#Created by Karl, @karl0077. PM me if you have issues!
+#Not for distribution, purely for internal usage 
+#If you'd like to contribute to QuickSwap, or kindly buy me a coffee, you can do so to 0x91FD856a6Ae3Df1a3501F75a40144bA2D306CB54 (BEP-20). Thank you in advance!
+
 import sys
 import time
 import pprint
