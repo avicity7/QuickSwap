@@ -1,6 +1,6 @@
 # QuickSwap
 
-A discrete Python based node-less sniper. 
+A discrete, locally-hosted Python based BSC token liquidity sniper. 
 
 ## Usage
 Web3 is required. Install the Web3 library by utilising the command below: 
